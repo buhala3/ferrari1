@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferrari</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      body { background-image: url("data:image/jpeg;base64,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xO0ObwrM4heb+S7F7mq5qa7mxbeawp6tpCC7WlcFd76lT0A8dnU4dJhivNW28xvtv2/hhS17b9W5x/jS8PxXyMhg7KNKoXk7xz7KKuzrZ+J0AT5TV02mjV54rjjaPP2Z2tNY691DYhtybrMm881ljmx28ix8gPIAaAHuAlyty0rFK9odfhml/wC1nZkLvkBAQEBAQEBAQEBAQTG/RIewPaX8isGJedYlz/8Ah7D4U2Mdmtj5VsT0PkT7j00OJaH7zT4lI/HHf5qvrtLOnvzR4Z/hP81nrye8sGQ+O2P3QSpWsrDc5L95QiliSOXTaI0GB103x8ERbByUmIvE9d+k/SWhbxbz2YezXCqqbMq2ilsei/uStJUoC6hue1aT1rDBkXRAP2e9e9r883x0pe0WtG+8/wBRv5mOvWZjs7tgJBCnTEEA63o66HU5uOYi8c3ZLbt0RZnsXEOJVTk35LK1Z/LFsZFZztnsyGASytS29KSSBoD3dzkp94+8WtWKR6f69WvvPLy+bqcI4Xi8Mxgq8lddNQN15VVL8i+tZYw8Sep+s52fPl1ubp13npHokrEUqpXth2js4tkjl5lxaiVoQ9On51rD9Jvd5DQ9+7bo9JXR4uX/ALT3lsaTT2zX5pZKKQihR5TKZ36rXjxxSu0Mk8ZkBAQEBAQEBAQEBAQPF1SuCrDYI0QZ7E7TvCPLirkrNbR0lLOxPbU4/JiZz/ZdExstz7PkK7m/AOfkffOVxLhkZ4+Lh8XnHr7KvqdLbS22nw+UrQErExMTtKKJ3J4MOZlV0o9trqlaKWd3OlAHmTJMWK+W8UpG8yxtaIjdR3bntlbxR+4o5kw0baqejXEeD2DyUeS/U9fC58P0FNHTeet5/j2ZYMF89vk08HDFa68z4mbF7bytOnwRirtDamDYICAgICAgICAgICAgICB4trDAqw2D0IM9iZid2GTHXJXltHR1uzPa/J4by1WBsnCHRU39rSPdWx6Mo/RP0I8Jqavh+LV9fDf19fdXNVw++GebH1r6JxnekjhVdIuW8Wsw9Siofa79zIdd3820PnOLj4JqbZOW0bR6ufOWO0d1Udou0ebxZx3n2dCndeOhPIv6zH/1H+J+gEsum0uHSV2p385bWm0V81t7PeHhrWOnj5me2tMrLg09cUdGzMU5AQEBAQEBAQEBAQEBAQEBA+QT1a74FJOyg37+sz57erXnSYZnflZ66wo0oAHwmMzumrSK9Ih6njIgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH//2Q==")}
+      
+       </style>
+</head>
+<body >
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="file:///C:/Users/Boris%20B%20Shirov/Ferrari-home.html?#">Ferrari fan website</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="file:///C:/Users/Boris%20B%20Shirov/ferrari-hisstory.html">history</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///C:/Users/Boris%20B%20Shirov/Ferrari-home.html?#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="file:///C:/Users/Boris%20B%20Shirov/int-%20ferrari.html">interesting facts</a>
+                  </li>
+                
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+    </div>
+   </nav>
+
+ <h1 style="margin: 250px;">Look at some of the greatest models Ferrari ever made!</h1>
+
+   <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Screenshot 2024-08-23 at 10-45-20 The First Ferrari The Saga of the 125 C_125 S - Revs Automedia.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h4>Ferrari 125s</h4>
+          <p>First Ferrari ever!</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.supercars.net/blog/wp-content/uploads/2021/06/2022-Ferrari-296-GTB-004-2160-scaled.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h4>Ferrari 269 GTB</h4>
+          
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://autowise.com/wp-content/uploads/2020/01/ferrari-roma.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h4>Ferrari Roma GTS</h4>
+          
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.ferrari.com/cms/network/media/img/resize/6093c24cef0edd50a7434d90-ferrari-magazine-buijPJtX-p.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Ferrari J 50</h5>
+          <p>Made for the 50th anniversary of Ferrari in Japan.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+ 
+
+
+
+</body>
+</html>
